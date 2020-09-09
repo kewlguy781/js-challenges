@@ -6,16 +6,12 @@
 
 let alphabetSoup = 'hello'
 
-function (alphabetSoup) {
-
+function soup(string) {
 // copy the string and break into characters array
-let stringA= alphabetSoup.split("")
+let stringA= string.split("")
 stringA.sort()
+stringA = stringA.join("")
+console.log('stringA :>> ', stringA);
 return stringA
-
-
-
-//return
-
-
 }
+soup(alphabetSoup)
